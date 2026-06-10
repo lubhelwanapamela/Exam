@@ -1,0 +1,9 @@
+<resources>
+    <!-- Dark nature theme — no ActionBar so splash fills the screen fully -->
+    <style name="Theme.CampsiteCommander" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/forest_green</item>
+        <item name="colorPrimaryVariant">@color/earth_brown</item>
+        <item name="colorOnPrimary">@color/cream_white</item>
+        <item name="android:windowBackground">@color/dark_background</item>
+    </style>
+</resources>

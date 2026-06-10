@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Splash Screen: Dark nature-themed background with logo and app title -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/dark_background"
+    android:padding="32dp">
+
+    <!-- Campfire / pine tree emoji as logo placeholder -->
+    <TextView
+        android:id="@+id/tvLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🏕"
+        android:textSize="96sp"
+        android:layout_marginBottom="24dp"/>
+
+    <TextView
+        android:id="@+id/tvAppTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Campsite Commander"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/forest_green"
+        android:layout_marginBottom="12dp"/>
+
+    <TextView
+        android:id="@+id/tvTagline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pack smart. Adventure boldly."
+        android:textSize="16sp"
+        android:textColor="@color/cream_white"/>
+
+</LinearLayout>

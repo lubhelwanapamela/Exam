@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Add Gear Screen: Form to input new camping item details -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="➕ Add Gear"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/forest_green"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Item Name -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Item Name"
+            android:textColor="@color/cream_white"
+            android:textSize="14sp"
+            android:layout_marginBottom="4dp"/>
+
+        <EditText
+            android:id="@+id/etItemName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="e.g. Tent, Marshmallows"
+            android:inputType="textCapWords"
+            android:textColor="@color/cream_white"
+            android:textColorHint="@color/hint_grey"
+            android:backgroundTint="@color/forest_green"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Category Spinner -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Category"
+            android:textColor="@color/cream_white"
+            android:textSize="14sp"
+            android:layout_marginBottom="4dp"/>
+
+        <Spinner
+            android:id="@+id/spinnerCategory"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:backgroundTint="@color/forest_green"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Quantity -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quantity"
+            android:textColor="@color/cream_white"
+            android:textSize="14sp"
+            android:layout_marginBottom="4dp"/>
+
+        <EditText
+            android:id="@+id/etQuantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="e.g. 1"
+            android:inputType="number"
+            android:textColor="@color/cream_white"
+            android:textColorHint="@color/hint_grey"
+            android:backgroundTint="@color/forest_green"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Comments -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notes / Comments (optional)"
+            android:textColor="@color/cream_white"
+            android:textSize="14sp"
+            android:layout_marginBottom="4dp"/>
+
+        <EditText
+            android:id="@+id/etComments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="e.g. Check batteries (AA)"
+            android:inputType="textMultiLine"
+            android:minLines="2"
+            android:textColor="@color/cream_white"
+            android:textColorHint="@color/hint_grey"
+            android:backgroundTint="@color/forest_green"
+            android:layout_marginBottom="32dp"/>
+
+        <!-- Save Button -->
+        <Button
+            android:id="@+id/btnSaveGear"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="💾  Save to Pack"
+            android:textSize="16sp"
+            android:textColor="@color/dark_background"
+            android:backgroundTint="@color/forest_green"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Back to Base (Main Screen) -->
+        <Button
+            android:id="@+id/btnBackToBase"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="🏠  Back to Base"
+            android:textSize="16sp"
+            android:textColor="@color/cream_white"
+            android:backgroundTint="@color/earth_brown"/>
+
+    </LinearLayout>
+</ScrollView>
